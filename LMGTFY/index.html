@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <body>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+      <style>body {
+        font-family: helvetica, arial, sans-serif;
+        margin: 2em;
+      }
+      
+      h1 {
+        font-style: italic;
+        color: #373fff;
+      }
+      input[type="text"],
+      input[type="a"] {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        position: absolute;
+        top: 45%;
+        width: 50%;
+        text-align: center;
+        font-size: 18px;
+        left: 400px;
+      }
+      
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 3px;
+        cursor: pointer;
+        width: 10%;
+        position: absolute;
+        top: 55%;
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+        left: 640px;
+        border-color: #000000;
+      }
+      
+      button:hover {
+        opacity: 0.5;
+      }
+      div {
+        position: absolute;
+        top: 65%;
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+        left: 640px;
+      }
+      p {
+        position: absolute;
+        top: 70%;
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+        left: 640px;
+      }
+      p2 {
+        position: absolute;
+        top: 75%;
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+        left: 640px;
+      }
+      p3 {
+        position: absolute;
+        top: 80%;
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+        left: 640px;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p4 {
+        font-family: Copperplate;
+        position: absolute;
+        top: 5%;
+        width: 20%;
+        text-align: center;
+        font-size: 25px;
+        left: 620px;
+      }
+      ::-moz-selection {
+        color: black;
+        background: cyan;
+      }
+      ::selection {
+        color: black;
+        background: cyan;
+      }
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        
+      }
+      a:visited {
+        color: pink;
+        background-color: black;
+        text-decoration: underline;
+        float: right;
+      }
+      a:hover {
+        color: red;
+        background-color: black;
+        text-decoration: underline;
+      }
+      a:active {
+        color: cyan;
+        background-color: black;
+        text-decoration: underline;
+      }
+      #lol {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        float: right;
+      }
+      #lol:visited {
+        color: pink;
+        background-color: black;
+        text-decoration: underline;
+        float: right;
+      }
+      #lol:hover {
+        color: red;
+        background-color: black;
+        text-decoration: underline;
+      }
+      #lol:active {
+        color: cyan;
+        background-color: black;
+        text-decoration: underline;
+      }
+      #mobileShow{
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 3px;
+        cursor: pointer;
+        width: 10%;
+        position: absolute;
+        top: 0%;
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+        left: 10px;
+        
+      }
+      #mobileShow:hover {
+        opacity: 0.5;
+      }
+      </style>
+      <input
+        type="text"
+        placeholder="type something to create the link"
+        id="a"
+        value=""
+        required
+      />
+      <button onclick="myFunction()">create link</button>
+      <script>
+        var h = "http://letmegooglethat.com/?q=";
+        function myFunction() {
+          var x = document.getElementById("a").value;
+          document.getElementById("demo").innerHTML = h + x;
+        }
+      </script>
+      <div id="demo"></div>
+      
+      <style type="text/css">
+        @media screen and (min-width: 500px) {
+          .mobileShow {
+            display: none;
+          }
+        }
+      </style>
+
+      <button onclick="share()" id="mobileShow">
+        Share to whatsapp
+      </button>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+      <script type="text/javascript">
+        function share() {
+          var message = $("input[name=message]").val();
+          var c = "http://letmegooglethat.com/?q=";
+          var d = document.getElementById("a").value;
+          var lol = c + d;
+          window.open("whatsapp://send?text=" + lol, "_blank");
+        }
+      </script>
+
+      <img
+        src="https://cdn.glitch.com/c90fde77-f462-4e22-bc26-b87111c788a7%2Flmgtfy.png?v=1607084087206"
+        alt="something went wrong try refreshing the page"
+        style="width:50%;"
+      />
+      <title>LMGTFY</title>
+      <p>
+        click create link and copy it
+      </p>
+      <p2>
+        then share it
+      </p2>
+      <p3> leave the input blank to go to LMGTFY </p3>
+
+      <p4>Let Me Google That For You</p4>
+
+      <a href="privacy policy.html" id="ok"
+        >privacy policy</a
+      >
+      <a href="terms and conditions.html" id="lol"
+        >terms and conditions</a
+      >
+    </body>
+  </head>
+</html>
